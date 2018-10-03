@@ -1,0 +1,38 @@
+<div id="login" *ngIf="!user">
+    <form (submit)="onSubmit()">
+      <table>
+          <tr>
+            <td>Email: </td>
+            <td><input type="text" name="email"
+              required
+              minlength="4" 
+              [(ngModel)]="login.email"
+              #email="ngModel"
+              pattern="^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$"
+              ></td>
+          </tr>
+          <tr>
+            <td>Password: </td>
+            <td><input type="password" name="password" 
+              name="password" 
+              required 
+              minlength="8" 
+              maxlength="24"
+              [(ngModel)]="login.password"
+              #password='ngModel'
+              ></td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="login"></td>
+          </tr>
+      </table>
+    </form>
+    <a [routerLink]="['register']">Don't have an account? Sign up!</a>
+</div>
+<div id="in" *ngIf="user">
+  <ul>
+      <li><span> | </span><a [routerLink]="['cart']">Cart </a></li>
+      <li><span> | </span><a [routerLink]="['checkout']">Checkout </a></li>
+    <li><span> | </span><a [routerLink]="['user']">Profile</a></li>
+  </ul>
+</div>

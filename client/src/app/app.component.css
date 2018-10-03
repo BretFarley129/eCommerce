@@ -1,0 +1,61 @@
+div{
+    box-sizing: border-box;
+}
+#wrapper{
+    margin: 0px auto;
+    height: 900px;
+    width: 1200px;
+    border: 1px solid green;
+}
+#header{
+    width: 100%;
+    height: 150px;
+    border: 1px solid green;
+    border-bottom: 1px solid black;
+}
+#logo{
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+}
+#links{
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    text-align: right;
+    padding-right: 10px;
+}
+#links ul li{
+    display: inline-block;
+    font-size: 200%;
+    margin-top: 20px;
+}
+#links ul{
+    padding: 0px;
+    margin-top: 30px;
+    height: 60px;
+}
+#login{
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+}
+#login table{
+    text-align: left;
+    margin: 5% 10%;
+}
+#body{
+    width: 100%;
+    height: 650px;
+    border: 1px solid green;
+}
+#footer{
+    padding:20px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid green;
+}

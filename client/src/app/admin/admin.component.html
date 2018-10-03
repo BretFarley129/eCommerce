@@ -1,0 +1,9 @@
+<div *ngIf="user.admin">
+  <h1>Welcome to the store management page</h1>
+  <a [routerLink]="['products']">Manage products</a>|
+  <a [routerLink]="['users']">Manage users</a>
+</div>
+<div *ngIf="!user.admin">
+  <h1>you are not authorized to see this content</h1>
+</div>
+<router-outlet></router-outlet>

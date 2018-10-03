@@ -1,0 +1,26 @@
+button{
+    width:80%;
+    height:20px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid yellow;
+}
+.item{
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width:22%;
+    height: 45%;
+    margin: 1%;
+    border: 1px solid black;
+}
+#wrapper{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+img{
+    max-height: 50%;
+    max-width: 90%;
+}

@@ -1,0 +1,23 @@
+<div id="wrapper">
+  <div id="header">
+    <div id="logo">
+      <h1 style="margin:13.5%">Image Here</h1>
+    </div><div id="links">
+      <ul>
+          <li><a [routerLink]="['/']">Home</a></li>
+          <li><span> | </span><a [routerLink]="['/']">About</a></li>
+          <li><span> | </span><a [routerLink]="['products']">Products</a></li>
+      </ul>
+    </div><app-login></app-login>
+  <div id="body">
+    <router-outlet></router-outlet>
+  </div>
+  <div id="footer">
+    ayy this is the footer lmao. It's some garbage right now, but that's because I don't
+    really care how it turns out. This is just some forward planning in case it turns out 
+    that really need this to put a bunch of links and information in here. In reality I 
+    will need to do something here, but I would like to save that for the end of this 
+    process of designing this website.
+    <a [routerLink]="['admin']">Admin editing</a>
+  </div>
+</div>
